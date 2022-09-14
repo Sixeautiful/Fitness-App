@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView{
+            WelcomeView()
+            ForEach(0..<4){ number in
+                ExerciseView(index: number)
+            }
+            
+            Text("Exersice 2 ")
+        }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        
     }
 }
 
