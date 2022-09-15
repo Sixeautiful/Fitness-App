@@ -13,6 +13,7 @@
 		DA068F7728D24E1D00E955B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA068F7628D24E1D00E955B7 /* Preview Assets.xcassets */; };
 		DA068F7E28D2528800E955B7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA068F7D28D2528800E955B7 /* WelcomeView.swift */; };
 		DA068F8028D252A500E955B7 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA068F7F28D252A500E955B7 /* ExerciseView.swift */; };
+		DA068F8528D35CA200E955B7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA068F8428D35CA200E955B7 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		DA068F7628D24E1D00E955B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA068F7D28D2528800E955B7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DA068F7F28D252A500E955B7 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		DA068F8428D35CA200E955B7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				DA068F7128D24E1800E955B7 /* ContentView.swift */,
 				DA068F7D28D2528800E955B7 /* WelcomeView.swift */,
 				DA068F7F28D252A500E955B7 /* ExerciseView.swift */,
+				DA068F8428D35CA200E955B7 /* HeaderView.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA068F8528D35CA200E955B7 /* HeaderView.swift in Sources */,
 				DA068F8028D252A500E955B7 /* ExerciseView.swift in Sources */,
 				DA068F7228D24E1800E955B7 /* ContentView.swift in Sources */,
 				DA068F7E28D2528800E955B7 /* WelcomeView.swift in Sources */,
