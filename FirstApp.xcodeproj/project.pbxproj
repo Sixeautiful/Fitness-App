@@ -14,6 +14,10 @@
 		DA068F7E28D2528800E955B7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA068F7D28D2528800E955B7 /* WelcomeView.swift */; };
 		DA068F8028D252A500E955B7 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA068F7F28D252A500E955B7 /* ExerciseView.swift */; };
 		DA068F8528D35CA200E955B7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA068F8428D35CA200E955B7 /* HeaderView.swift */; };
+		DA068F9228D8BC9000E955B7 /* step-up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA068F9128D8BC9000E955B7 /* step-up.mp4 */; };
+		DA068F9628D8BCAD00E955B7 /* sun-salute.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA068F9528D8BCAD00E955B7 /* sun-salute.mp4 */; };
+		DA068F9828D8BCB000E955B7 /* burpee.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA068F9728D8BCB000E955B7 /* burpee.mp4 */; };
+		DA068F9D28D9087700E955B7 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA068F9C28D9087700E955B7 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,11 @@
 		DA068F7D28D2528800E955B7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		DA068F7F28D252A500E955B7 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		DA068F8428D35CA200E955B7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DA068F9128D8BC9000E955B7 /* step-up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "step-up.mp4"; sourceTree = "<group>"; };
+		DA068F9528D8BCAD00E955B7 /* sun-salute.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sun-salute.mp4"; sourceTree = "<group>"; };
+		DA068F9728D8BCB000E955B7 /* burpee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = burpee.mp4; sourceTree = "<group>"; };
+		DA068F9B28D8BCEB00E955B7 /* squat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = squat.mp4; sourceTree = "<group>"; };
+		DA068F9C28D9087700E955B7 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +88,22 @@
 				DA068F7128D24E1800E955B7 /* ContentView.swift */,
 				DA068F7D28D2528800E955B7 /* WelcomeView.swift */,
 				DA068F7F28D252A500E955B7 /* ExerciseView.swift */,
+				DA068F9C28D9087700E955B7 /* RatingView.swift */,
 				DA068F8428D35CA200E955B7 /* HeaderView.swift */,
+				DA068F9A28D8BCD700E955B7 /* Video */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DA068F9A28D8BCD700E955B7 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				DA068F9128D8BC9000E955B7 /* step-up.mp4 */,
+				DA068F9528D8BCAD00E955B7 /* sun-salute.mp4 */,
+				DA068F9B28D8BCEB00E955B7 /* squat.mp4 */,
+				DA068F9728D8BCB000E955B7 /* burpee.mp4 */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +164,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA068F9228D8BC9000E955B7 /* step-up.mp4 in Resources */,
 				DA068F7728D24E1D00E955B7 /* Preview Assets.xcassets in Resources */,
+				DA068F9628D8BCAD00E955B7 /* sun-salute.mp4 in Resources */,
+				DA068F9828D8BCB000E955B7 /* burpee.mp4 in Resources */,
 				DA068F7428D24E1D00E955B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +182,7 @@
 				DA068F8528D35CA200E955B7 /* HeaderView.swift in Sources */,
 				DA068F8028D252A500E955B7 /* ExerciseView.swift in Sources */,
 				DA068F7228D24E1800E955B7 /* ContentView.swift in Sources */,
+				DA068F9D28D9087700E955B7 /* RatingView.swift in Sources */,
 				DA068F7E28D2528800E955B7 /* WelcomeView.swift in Sources */,
 				DA068F7028D24E1800E955B7 /* FirstAppApp.swift in Sources */,
 			);
