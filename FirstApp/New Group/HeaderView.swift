@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct HeaderView: View {
-    let exerciseName: String
+    let titleName: String
     var body: some View {
         VStack {
-            Text(exerciseName)
+            Text(titleName)
                 .font(.largeTitle)
             HStack {
                 Image(systemName: "1.circle")
@@ -26,7 +26,11 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(exerciseName: "Squat")
-            .previewLayout(.sizeThatFits)
+        Group {
+            HeaderView(titleName: "Squat")
+                .previewLayout(.sizeThatFits)
+            HeaderView(titleName: "Squat")
+                .previewLayout(.sizeThatFits)
+        }
     }
 }
