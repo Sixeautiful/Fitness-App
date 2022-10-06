@@ -36,7 +36,8 @@ struct ExerciseView: View {
                  Button {
                      
                  } label: {
-                     Text("Start/Done")
+                     Text(
+                        NSLocalizedString("Start/Done", comment: "beginig exercise / mark as fineshed"))
                  }
                  .font(.title3)
                  .padding()
@@ -47,7 +48,9 @@ struct ExerciseView: View {
                  Button {
                      
                  } label: {
-                     Text("History button")
+                     Text(
+                        NSLocalizedString("History button", comment: "View user's activity")
+                     )
                  }
                  .padding(.bottom)
 

@@ -13,16 +13,18 @@ struct WelcomeView: View {
             VStack{
                 HStack{
                     VStack(alignment: .leading){
-                        Text("Get Fir")
+                        Text(NSLocalizedString("Get Fit", comment: "be stronger"))
                             .font(.largeTitle)
-                        Text("with high intensity interval training")
+                        Text(
+                            NSLocalizedString("with high intensity interval training", comment: "description what is app about")
+                        )
                             .font(.headline)
                     } // vstack 1.0
                 } // Hstack
                 Button {
                     
                 } label: {
-                    Label("Get Started", systemImage: "arrow.right.circle")
+                    Label(NSLocalizedString("Get Started", comment: "Start"), systemImage: "arrow.right.circle")
 //                    Text("Get started")
 //                    Image(systemName: "arrow.right.circle")
                 }
@@ -33,12 +35,16 @@ struct WelcomeView: View {
 
             }// Vstack 0.0
             VStack {
-                HeaderView(titleName: "Welcome")
+                HeaderView(titleName:
+                            NSLocalizedString(
+                    "Welcome", comment: "greeting")
+                )
                 Spacer()
                 Button {
                 
                 } label: {
-                    Text("History")
+                    Text(NSLocalizedString(
+                        "History", comment: "view of user activity"))
                 }
                 .padding(.bottom)
 

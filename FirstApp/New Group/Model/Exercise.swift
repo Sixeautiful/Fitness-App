@@ -17,6 +17,8 @@ struct Exercise{
         case burpee = "Burpee"
         case sunSalute = "Sun Salute"
     }
+    
+    
 }
 
 extension Exercise {

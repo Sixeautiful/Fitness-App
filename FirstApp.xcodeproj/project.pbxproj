@@ -23,6 +23,7 @@
 		DA6F390828E06FF200A43A20 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F390728E06FF200A43A20 /* Exercise.swift */; };
 		DA6F390A28E5A7DA00A43A20 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F390928E5A7DA00A43A20 /* History.swift */; };
 		DAA079BD28E750BF00AA5DBE /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA079BC28E750BF00AA5DBE /* HistoryStoreDevData.swift */; };
+		DAB18BBA28EB42ED00897331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAB18BBC28EB42ED00897331 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		DA6F390728E06FF200A43A20 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		DA6F390928E5A7DA00A43A20 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		DAA079BC28E750BF00AA5DBE /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
+		DAB18BBB28EB42ED00897331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				DA068F6F28D24E1800E955B7 /* FirstAppApp.swift */,
+				DA4DA92E28EEF23F0002A4E4 /* en.lproj */,
 				DA068F8128D252B400E955B7 /* New Group */,
 				DA068F7328D24E1D00E955B7 /* Assets.xcassets */,
 				DA068F7528D24E1D00E955B7 /* Preview Content */,
@@ -95,13 +98,7 @@
 		DA068F8128D252B400E955B7 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				DA068F7128D24E1800E955B7 /* ContentView.swift */,
-				DA068F7D28D2528800E955B7 /* WelcomeView.swift */,
-				DA068F7F28D252A500E955B7 /* ExerciseView.swift */,
-				DA6F390528E0605C00A43A20 /* SuccessView.swift */,
-				DA068F9E28DC83C700E955B7 /* HistoryView.swift */,
-				DA068F9C28D9087700E955B7 /* RatingView.swift */,
-				DA068F8428D35CA200E955B7 /* HeaderView.swift */,
+				DAB18BBD28EB439F00897331 /* View */,
 				DAA079BE28E756FC00AA5DBE /* Preview Content */,
 				DA6F390B28E5A7E100A43A20 /* Model */,
 				DA068F9A28D8BCD700E955B7 /* Video */,
@@ -120,6 +117,14 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
+		DA4DA92E28EEF23F0002A4E4 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				DAB18BBC28EB42ED00897331 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
 		DA6F390B28E5A7E100A43A20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +140,20 @@
 				DAA079BC28E750BF00AA5DBE /* HistoryStoreDevData.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAB18BBD28EB439F00897331 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA068F7128D24E1800E955B7 /* ContentView.swift */,
+				DA068F7D28D2528800E955B7 /* WelcomeView.swift */,
+				DA068F7F28D252A500E955B7 /* ExerciseView.swift */,
+				DA6F390528E0605C00A43A20 /* SuccessView.swift */,
+				DA068F9E28DC83C700E955B7 /* HistoryView.swift */,
+				DA068F9C28D9087700E955B7 /* RatingView.swift */,
+				DA068F8428D35CA200E955B7 /* HeaderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA068F9228D8BC9000E955B7 /* step-up.mp4 in Resources */,
+				DAB18BBA28EB42ED00897331 /* Localizable.strings in Resources */,
 				DA068F7728D24E1D00E955B7 /* Preview Assets.xcassets in Resources */,
 				DA068F9628D8BCAD00E955B7 /* sun-salute.mp4 in Resources */,
 				DA068F9828D8BCB000E955B7 /* burpee.mp4 in Resources */,
@@ -225,6 +245,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAB18BBC28EB42ED00897331 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB18BBB28EB42ED00897331 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA068F7828D24E1D00E955B7 /* Debug */ = {
