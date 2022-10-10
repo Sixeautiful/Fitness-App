@@ -10,13 +10,7 @@ import SwiftUI
 struct HistoryView: View {
     
     let history = HistoryStore()
-    
-//    //let today = Date()
-//    let yesterday = Date().addingTimeInterval(-86400)
-//    
-//    let exercises1 = ["Squat", "Step Up", "Burpee", "Sun Salute"] //exersises at first day
-//    let exercises2 = ["Squat", "Step Up", "Burpee"] // exersise at second day
-//    
+      
     var body: some View {
         ZStack(alignment: .topTrailing) {
             Button {
