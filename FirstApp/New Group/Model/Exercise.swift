@@ -17,31 +17,35 @@ struct Exercise{
         case burpee
         case sunSalute
         
-        var description: String{
-            switch self{
-            case .squat:
+        var description: String {
+              switch self {
+              case .squat:
                 return NSLocalizedString("Squat", comment: "exercise")
-            case .stepUp:
+              case .stepUp:
                 return NSLocalizedString("Step Up", comment: "exercise")
-            case .burpee:
+              case .burpee:
                 return NSLocalizedString("Burpee", comment: "exercise")
-            case .sunSalute:
-                return NSLocalizedString("Sun Salute", comment: "yoga strech")
+              case .sunSalute:
+                return NSLocalizedString(
+                  "Sun Salute", comment: "yoga stretch")
+              }
             }
-        }
     }
 }
 
 extension Exercise {
-    static let exercises = [
-        Exercise(
-            exerciseName: String( describing: ExerciseEnum.squat), videoName: "squat"),
-        Exercise(
-            exerciseName: String( describing: ExerciseEnum.stepUp), videoName: "step-up"),
-        Exercise(
-            exerciseName: String( describing: ExerciseEnum.burpee), videoName: "burpee"),
-        Exercise(
-            exerciseName: String( describing: ExerciseEnum.sunSalute), videoName: "sun-salute")
-        
-    ]
+  static let exercises = [
+    Exercise(
+      exerciseName: String(describing: ExerciseEnum.squat),
+      videoName: "squat"),
+    Exercise(
+      exerciseName: String(describing: ExerciseEnum.stepUp),
+      videoName: "step-up"),
+    Exercise(
+      exerciseName: String(describing: ExerciseEnum.burpee),
+      videoName: "burpee"),
+    Exercise(
+      exerciseName: String(describing: ExerciseEnum.sunSalute),
+      videoName: "sun-salute")
+  ]
 }

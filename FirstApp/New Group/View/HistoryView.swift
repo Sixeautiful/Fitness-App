@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct HistoryView: View {
+    @Binding var showhistoryView: Bool
     
     let history = HistoryStore()
       
     var body: some View {
         ZStack(alignment: .topTrailing) {
             Button {
-                
+                showhistoryView.toggle()
             } label: {
                 Image(systemName: "xmark.circle")
             }
@@ -39,28 +40,7 @@ struct HistoryView: View {
                           }
                         }
                 }
-//                Form {
-//                  Section(
-//                    header:
-//                        Text(today.formatted(.dateTime.day().month()))
-//                      .font(.headline)) {
-//                    // Section content
-//                          ForEach( exercises1, id: \.self){ exersixe in
-//                              Text(exersixe)
-//                          }
-//                  }
-//
-//                  Section(
-//                    header:
-//                        Text(yesterday.formatted(.dateTime.day().month()))
-//                   // Text(yesterday.formatted(as: "MMM d") )
-//                      .font(.headline)) {
-//                    // Section content
-//                          ForEach( exercises2, id: \.self){ exersixe in
-//                              Text(exersixe)
-//                          }
-//                  }
-//                } //Form
+                
             }
         } //Vstack
 
@@ -70,7 +50,7 @@ struct HistoryView: View {
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryView()
+        HistoryView(showhistoryView: .constant(true))
     }
 }
 

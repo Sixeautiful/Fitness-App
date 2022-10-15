@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DA068F6F28D24E1800E955B7 /* FirstAppApp.swift */,
-				DA4DA92E28EEF23F0002A4E4 /* en.lproj */,
+				DAB18BBC28EB42ED00897331 /* Localizable.strings */,
 				DA068F8128D252B400E955B7 /* New Group */,
 				DA068F7328D24E1D00E955B7 /* Assets.xcassets */,
 				DA068F7528D24E1D00E955B7 /* Preview Content */,
@@ -116,14 +116,6 @@
 				DA068F9728D8BCB000E955B7 /* burpee.mp4 */,
 			);
 			path = Video;
-			sourceTree = "<group>";
-		};
-		DA4DA92E28EEF23F0002A4E4 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				DAB18BBC28EB42ED00897331 /* Localizable.strings */,
-			);
-			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		DA6F390B28E5A7E100A43A20 /* Model */ = {

@@ -9,11 +9,16 @@ import SwiftUI
 import AVKit
 
 struct ExerciseView: View {
-//    let videoNames = ["squat", "step-up", "burpee", "sun-salute"]
-//    let exerciseNames = ["Squat", "Step Up", "Burpee", "Sun Salute"]
-    let index: Int
+    @Binding var selectedTab: Int
+    @State private var rating: Int = 0
+    @State private var showhistoryView = false
+    @State private var showsuccessView = false
     
+    let index: Int
     let interval: TimeInterval = 30
+    var lastexercise: Bool {
+        index + 1 == Exercise.exercises.count
+    }
     
 
     var body: some View {
@@ -21,7 +26,7 @@ struct ExerciseView: View {
         GeometryReader { geometry in 
              VStack {
               
-                 HeaderView(titleName: Exercise.exercises[index].exerciseName)
+                 HeaderView(selectedTab: $selectedTab, titleName: Exercise.exercises[index].exerciseName)
                      .padding(.bottom)
                 
                  if let url = Bundle.main.url(forResource: Exercise.exercises[index].videoName, withExtension: "mp4") {
@@ -33,26 +38,41 @@ struct ExerciseView: View {
                 }
                  Text(Date().addingTimeInterval(interval), style: .timer)
                      .font(.system(size: 90))
-                 Button {
+                 HStack(spacing: 150) {
+                     Button("Start") {
+                         
+                     }
+                     Button("Done") {
+                         if lastexercise {
+                             showsuccessView.toggle()
+                         }
+                         else{
+                             selectedTab += 1
+                         }
+                         
+                     }
+                     .sheet(isPresented: $showsuccessView) {
+                         SuccessView(selectedTab: $selectedTab)
+                     }
                      
-                 } label: {
-                     Text(
-                        NSLocalizedString("Start/Done", comment: "beginig exercise / mark as fineshed"))
                  }
                  .font(.title3)
-                 .padding()
+             .padding()
 
            
-           RatingView()
+                 RatingView(rating: $rating)
                  Spacer()
                  Button {
-                     
+                     showhistoryView.toggle()
                  } label: {
                      Text(
                         NSLocalizedString("History button", comment: "View user's activity")
                      )
                  }
                  .padding(.bottom)
+                 .sheet(isPresented: $showhistoryView) {
+                     HistoryView(showhistoryView: $showhistoryView)
+                 }
 
            
             }
@@ -62,7 +82,7 @@ struct ExerciseView: View {
 
 struct ExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseView(index: 0)
+        ExerciseView(selectedTab: .constant(1), index: 1)
             //.previewLayout(.sizeThatFits)
     }
 }
