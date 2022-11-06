@@ -24,6 +24,7 @@
 		DA6F390A28E5A7DA00A43A20 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F390928E5A7DA00A43A20 /* History.swift */; };
 		DAA079BD28E750BF00AA5DBE /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA079BC28E750BF00AA5DBE /* HistoryStoreDevData.swift */; };
 		DAB18BBA28EB42ED00897331 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAB18BBC28EB42ED00897331 /* Localizable.strings */; };
+		DAEF2C7C28FC7660009D7A69 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF2C7B28FC7660009D7A69 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		DA6F390928E5A7DA00A43A20 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		DAA079BC28E750BF00AA5DBE /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
 		DAB18BBB28EB42ED00897331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAEF2C7B28FC7660009D7A69 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				DA068F7128D24E1800E955B7 /* ContentView.swift */,
 				DA068F7D28D2528800E955B7 /* WelcomeView.swift */,
 				DA068F7F28D252A500E955B7 /* ExerciseView.swift */,
+				DAEF2C7B28FC7660009D7A69 /* TimerView.swift */,
 				DA6F390528E0605C00A43A20 /* SuccessView.swift */,
 				DA068F9E28DC83C700E955B7 /* HistoryView.swift */,
 				DA068F9C28D9087700E955B7 /* RatingView.swift */,
@@ -230,6 +233,7 @@
 				DA068F8528D35CA200E955B7 /* HeaderView.swift in Sources */,
 				DA068F8028D252A500E955B7 /* ExerciseView.swift in Sources */,
 				DA6F390A28E5A7DA00A43A20 /* History.swift in Sources */,
+				DAEF2C7C28FC7660009D7A69 /* TimerView.swift in Sources */,
 				DA068F7228D24E1800E955B7 /* ContentView.swift in Sources */,
 				DA068F9D28D9087700E955B7 /* RatingView.swift in Sources */,
 				DA068F7E28D2528800E955B7 /* WelcomeView.swift in Sources */,

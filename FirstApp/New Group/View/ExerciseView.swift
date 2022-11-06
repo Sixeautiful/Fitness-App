@@ -14,6 +14,10 @@ struct ExerciseView: View {
     @State private var showhistoryView = false
     @State private var showsuccessView = false
     
+    @State private var TimerDone = false
+    @State private var ShowTimer = false
+   
+    
     let index: Int
     let interval: TimeInterval = 30
     var lastexercise: Bool {
@@ -36,13 +40,15 @@ struct ExerciseView: View {
                     Text("Coudnt find \(Exercise.exercises[index].videoName).mp4")
                         .foregroundColor(.red)
                 }
-                 Text(Date().addingTimeInterval(interval), style: .timer)
-                     .font(.system(size: 90))
+                 
+                 
                  HStack(spacing: 150) {
                      Button("Start") {
-                         
+                         ShowTimer.toggle()
                      }
                      Button("Done") {
+                         TimerDone = false
+                         ShowTimer.toggle()
                          if lastexercise {
                              showsuccessView.toggle()
                          }
@@ -51,17 +57,25 @@ struct ExerciseView: View {
                          }
                          
                      }
+                     .disabled(!TimerDone)
                      .sheet(isPresented: $showsuccessView) {
                          SuccessView(selectedTab: $selectedTab)
                      }
                      
+                     
                  }
                  .font(.title3)
-             .padding()
+                 .padding()
+                 
+                 if ShowTimer {
+                 TimerView(timerDome: $TimerDone)
+                 }
+                 Spacer()
 
            
                  RatingView(rating: $rating)
-                 Spacer()
+                     .padding()
+                
                  Button {
                      showhistoryView.toggle()
                  } label: {
