@@ -17,6 +17,7 @@ struct ExerciseView: View {
     @State private var TimerDone = false
     @State private var ShowTimer = false
    
+    @EnvironmentObject var history: HistoryStore
     
     let index: Int
     let interval: TimeInterval = 30
@@ -49,6 +50,7 @@ struct ExerciseView: View {
                      Button("Done") {
                          TimerDone = false
                          ShowTimer.toggle()
+                         history.addDoneEx(Exercise.exercises[index].exerciseName)
                          if lastexercise {
                              showsuccessView.toggle()
                          }

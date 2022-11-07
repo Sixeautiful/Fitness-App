@@ -59,5 +59,6 @@ struct SuccessView: View {
 struct SuccessView_Previews: PreviewProvider {
     static var previews: some View {
         SuccessView(selectedTab: .constant(3))
+            .environmentObject(HistoryStore())
     }
 }
